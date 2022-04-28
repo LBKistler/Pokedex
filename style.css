@@ -1,0 +1,60 @@
+/* reminder: that star applies to EACH ELEMENT on the page */
+* { 
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffcb05;
+    display: flex; 
+    /* reminder: flex puts everything in flexbox, and put everything inline */
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 50px;
+    background-color: #3d7dca;
+    border: 5px solid #003a70;
+    color: #ffcb05;
+    padding: 10px;
+    /* reminder: padding is between the content and border */
+    border-radius: 25px;
+    /* reminder: border radius rounds the corners */
+    letter-spacing: 5px;
+}
+
+/* styles for pokemon cards created in the JS file */
+#container{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pokemon{
+    background-color: #3d7dca;
+    width: 175px;
+    padding: 20px;
+    margin: 10px;
+    /* reminder: margin applies to the outermost layer (outside of the border) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.img-container{
+    background-color: #003a70;
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.name{
+    color: white;
+    margin-bottom: 0;
+
+}
